@@ -1,6 +1,0 @@
-ID,Nombre
-A01068085,Pompeyo
-A00841206,Erika
-A00840973,Anderea
-A00841748,Fernanda
-A00842194,Athenea
