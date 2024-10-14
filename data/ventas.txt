@@ -1,0 +1,6 @@
+vendedor,modelo,nombre,cantidad
+A01068085,Centodieci,Bugatti,2
+A00841206,Wrangler,Jeep,1
+A00840973,Mustang,Ford,1
+A00841748,Challenger,Dodge,1
+A00842194,"GT, AMG",Mercedes-Benz,1
