@@ -1,5 +1,4 @@
 # Sistema de Inventario y Ventas
-
 ## Descripción
 
 El **Sistema de Inventario y Ventas** es una herramienta diseñada para gestionar el inventario y las ventas de un establecimiento comercial. Este sistema permite a los administradores y vendedores:
@@ -61,7 +60,7 @@ pip3 install tabulate
    pip3 install tabulate
    ```
 
-4. Coloca los archivos de datos (`inventario.txt`, `ventas.txt`, `vendedores.txt`) en el directorio `data/`.
+4. Coloca los archivos de datos (`inventario.txt`, `ventas.txt`, `vendedores.txt`) en el **mismo directorio** donde está el archivo `main.py`.
 
 ---
 
@@ -69,10 +68,10 @@ pip3 install tabulate
 
 ### Ejecución del programa
 
-Para ejecutar el programa, simplemente corre el siguiente comando:
+Para ejecutar el programa, simplemente corre el siguiente comando una vez los archivos esten dentro de la misma carpeta y tu terminal este localizado en dicha carpeta:
 
 ```bash
-python3 src/main.py
+python3 main.py
 ```
 
 ### Menú Principal
@@ -93,7 +92,7 @@ Al ejecutar el programa, verás el siguiente menú:
 10) Salir
 ```
 
-Cada opción del menú te guiará en la acción correspondiente. 
+Cada opción del menú te guiará en la acción correspondiente.
 
 ### Ejemplo de uso
 
@@ -104,15 +103,13 @@ Cada opción del menú te guiará en la acción correspondiente.
 
 ## Estructura de Archivos
 
+Dado que los archivos de datos deben estar en el mismo directorio que el código fuente, tu proyecto se verá así:
+
 ```plaintext
-├── src/                          # Código fuente
-│   └── main.py                   # Archivo principal
-├── data/                         # Archivos de datos
-│   ├── inventario.txt            # Inventario de productos
-│   ├── vendedores.txt            # Información de vendedores
-│   └── ventas.txt                # Registro de ventas
-├── docs/                         # Documentación adicional
-│   └── manual.md                 # Manual de usuario
+├── main.py                      # Archivo principal con el código del sistema
+├── inventario.txt                # Archivo de inventario
+├── vendedores.txt                # Archivo de vendedores
+├── ventas.txt                    # Archivo de ventas
 └── README.md                     # Este archivo
 ```
 
