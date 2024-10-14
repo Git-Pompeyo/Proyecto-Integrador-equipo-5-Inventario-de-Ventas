@@ -1,10 +1,5 @@
 # Sistema de Inventario y Ventas
 
-![GitHub repo size](https://img.shields.io/github/repo-size/tuusuario/tu-repositorio)
-![GitHub contributors](https://img.shields.io/github/contributors/tuusuario/tu-repositorio)
-![GitHub stars](https://img.shields.io/github/stars/tuusuario/tu-repositorio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/tuusuario/tu-repositorio?style=social)
-
 ## Descripción
 
 El **Sistema de Inventario y Ventas** es una herramienta diseñada para gestionar el inventario y las ventas de un establecimiento comercial. Este sistema permite a los administradores y vendedores:
