@@ -339,4 +339,3 @@ Los miembros del equipo son:
 - Andrea Estefanía De la Peña Contreras
 - Fernanda Santillán Dantes
 - Erika Esquivel Correa
-```
