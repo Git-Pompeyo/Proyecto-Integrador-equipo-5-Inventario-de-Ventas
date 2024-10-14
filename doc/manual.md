@@ -142,7 +142,7 @@ Un cliente compra **2 unidades** del modelo **"Civic, Type R"** de **Honda**, y 
 
 1. Selecciona la opción **1** del menú.
 2. Ingresa los siguientes valores cuando se te solicite:
-   - Modelo: `"Civic, Type R"`
+   - Modelo: `Civic, Type R`
    - Nombre: **Honda**
    - Cantidad: **2**
    - ID del vendedor: **A00841206**
@@ -160,12 +160,12 @@ Llega un nuevo lote de **5 unidades** del modelo **"Corvette, Stingray"** de **C
 
 1. Selecciona la opción **2** del menú.
 2. Ingresa los siguientes valores cuando se te solicite:
-   - Modelo: `"Corvette, Stingray"`
+   - Modelo: `Corvette, Stingray`
    - Nombre: **Chevrolet**
    - Cantidad: **5**
 
 **Resultado esperado**: 
-- La cantidad de **"Corvette, Stingray"** en el inventario se actualizará, pasando de **6** a **11**.
+- La cantidad de **Corvette, Stingray** en el inventario se actualizará, pasando de **6** a **11**.
 - El archivo `inventario.txt` reflejará este cambio.
 
 ---
