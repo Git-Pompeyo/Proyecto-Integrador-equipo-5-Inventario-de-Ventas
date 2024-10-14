@@ -131,4 +131,3 @@ Agradecimientos especiales a la profesora **Mayra Flores López** por su orienta
 ## Licencia
 
 Este proyecto está bajo la [Licencia MIT](LICENSE).
-```
