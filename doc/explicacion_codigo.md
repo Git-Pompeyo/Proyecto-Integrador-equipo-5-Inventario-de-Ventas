@@ -65,15 +65,23 @@ Esta función abre el archivo `ventas.txt`, lee su contenido y lo guarda en la l
 def importar_ventas():
     global ventas
     try:
-        with open(VENTAS_FILE, "r") as file:
-            reader = csv.DictReader(file)
-            for row in reader:
-                venta = {'vendedor': row['vendedor'], 'modelo': row['modelo'], 'nombre': row['nombre'], 'cantidad': int(row['cantidad'])}
-                ventas.append(venta)
+            with open(VENTAS_FILE, "r") as file:
+                reader = csv.DictReader(file)
+
+                for row in reader:
+                    id = row['vendedor'] 
+                    modelo = row["modelo"]
+                    nombre = row["nombre"]
+                    cantidad = int(row["cantidad"])
+
+                    venta = {'vendedor': id, 'modelo': modelo , 'nombre': nombre, 'cantidad': cantidad}
+
+                    ventas.append(venta)           
+                
     except FileNotFoundError:
-        print(f"ERROR: El archivo '{VENTAS_FILE}' no se encontró /Ventas")
+            print(f"ERROR: El archivo '{"ventas.txt"}' no se encontró /Ventas")
     except csv.Error:
-        print(f"ERROR: Archivo CSV malformado /Ventas")
+            print(f"ERROR: Archivo CSV malformado /Ventas")
 ```
 
 #### b) `importar_vendedores()`
@@ -145,6 +153,7 @@ Calcula qué vendedor ha realizado la mayor cantidad de ventas y lo muestra al u
 
 ```python
 def menu():
+
     while True:
         print("\n=== SISTEMA DE INVENTARIO Y VENTAS ===\n")
         print("1) Registrar venta")
@@ -160,10 +169,13 @@ def menu():
 
         respuesta = input("Ingrese la opción deseada: ")
 
-        if respuesta in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+        if (respuesta == "1" or respuesta == "2" or respuesta == "3" or respuesta == "4"
+            or respuesta == "5" or respuesta == "6" or respuesta == "7" or respuesta == "8"
+            or respuesta == "9" or respuesta == "10"):
             break
 
         print("ERROR: ingresa una respuesta adecuada")
+
 
     return respuesta
 ```
@@ -180,39 +192,61 @@ def main():
     importar_vendedores()
     importar_inventario()
 
-    while True:
-        respuesta = menu()
+    respuesta = menu()
 
-        if respuesta == "1":
+    while True:
+        if respuesta == "1": 
             agregar_venta()
+
         elif respuesta == "2":
             agregar_producto()
+
         elif respuesta == "3":
             print(consultar_inventario())
+
         elif respuesta == "4":
             consultar_ventas_general()
+
         elif respuesta == "5":
+
             try:
-                print("Opciones para mostrar reporte:")
-                print("1) Reporte por vendedor")
-                print("2) Reporte por artículo")
-                respuesta = input("Ingrese respuesta: ")
-                if respuesta == "1":
-                    reporte_ventas_por_vendedor()
-                elif respuesta == "2":
-                    reporte_ventas_por_articulo()
+                while True:
+                    print("Opciones para mostrar reporte:")
+                    print()
+                    print("1) Reporte por vendedor")
+                    print("2) Reporte por artículo")
+
+                    respuesta = input("Ingrese respuesta: ")
+
+                    if respuesta == "1":
+                        reporte_ventas_por_vendedor()
+                        raise NotError_SalirDeBucle
+
+                    if respuesta == "2":
+                        reporte_ventas_por_articulo()
+                        raise NotError_SalirDeBucle
+                    print("ERROR: ingresa una opcion adecuada")
+
             except NotError_SalirDeBucle:
                 pass
+
         elif respuesta == "6":
             registrar_vendedor()
+
         elif respuesta == "7":
             mostrar_vendedores()
+
         elif respuesta == "8":
             modelo_mas_vendido()
+
         elif respuesta == "9":
             vendedor_estrella()
+            
         elif respuesta == "10":
             sys.exit()
+
+        respuesta = menu()
+        
 ```
 
 Esta es la función que ejecuta el sistema. Carga los datos al inicio y luego, dependiendo de la opción seleccionada por el usuario, ejecuta las funciones correspondientes.
