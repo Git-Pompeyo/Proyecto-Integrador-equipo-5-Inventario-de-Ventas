@@ -1,6 +1,3 @@
-### **manual.md**
-
-```markdown
 # Manual de Usuario - Sistema de Inventario y Ventas
 
 ## Introducción
