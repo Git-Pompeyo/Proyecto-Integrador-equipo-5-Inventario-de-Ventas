@@ -127,7 +127,3 @@ Este proyecto fue desarrollado por el Equipo 5:
 Agradecimientos especiales a la profesora **Mayra Flores López** por su orientación en el curso de Pensamiento Computacional para la Ingeniería.
 
 ---
-
-## Licencia
-
-Este proyecto está bajo la [Licencia MIT](LICENSE).
