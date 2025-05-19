@@ -26,8 +26,8 @@ El **Sistema de Inventario y Ventas** es una herramienta diseñada para gestiona
 
 Este repositorio incluye documentación detallada para diferentes audiencias:
 
-- [**Manual de Usuario**](./Manual.md): Guía completa con instrucciones paso a paso y ejemplos de uso para usuarios finales
-- [**Explicación del Código**](./Explicacioncodigo.md): Documentación técnica que explica la implementación para desarrolladores
+- [**Manual de Usuario**](./doc/explicacion_codigo.md): Guía completa con instrucciones paso a paso y ejemplos de uso para usuarios finales
+- [**Explicación del Código**](./doc/manual.md): Documentación técnica que explica la implementación para desarrolladores
 
 ## Estructura de Archivos
 ```
