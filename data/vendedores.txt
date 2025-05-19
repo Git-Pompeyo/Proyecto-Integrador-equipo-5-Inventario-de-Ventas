@@ -1,6 +1,6 @@
 ID,Nombre
-L02057892,Pompeyo
-L00245297,Erika
-L00608276,Anderea
-L00608275,Fernanda
-L00608269,Athenea
+L02057892,Veronica
+L00245297,Magdalena
+L00608276,Arturo
+L00608275,Pablo
+L00608269,Pedro
