@@ -1,123 +1,47 @@
 # Sistema de Inventario y Ventas
+
 ## Descripción
-
 El **Sistema de Inventario y Ventas** es una herramienta diseñada para gestionar el inventario y las ventas de un establecimiento comercial. Este sistema permite a los administradores y vendedores:
-
-- Registrar ventas y actualizar el inventario.
-- Consultar el inventario y las ventas realizadas.
-- Generar reportes de ventas detallados, tanto por vendedor como por artículo.
-
-El programa es fácil de usar y asegura que los datos ingresados sean validados y consistentes.
+- Registrar ventas y actualizar el inventario automáticamente
+- Consultar el inventario y las ventas realizadas
+- Generar reportes detallados, tanto por vendedor como por artículo
 
 ### Características principales:
-- **Registrar ventas**: Asegura que los productos vendidos se resten del inventario.
-- **Agregar productos al inventario**: Gestiona nuevas llegadas de productos.
-- **Generar reportes**: Reportes detallados por vendedor o artículo vendido.
-- **Mostrar el producto más vendido y el vendedor estrella**.
+- **Registrar ventas**: Asegura que los productos vendidos se resten del inventario
+- **Agregar productos al inventario**: Gestiona nuevas llegadas de productos
+- **Generar reportes**: Reportes detallados por vendedor o artículo vendido
+- **Estadísticas**: Muestra el producto más vendido y el vendedor estrella
 
----
+## Inicio Rápido
 
-## Tabla de Contenidos
-- [Requisitos](#requisitos)
-- [Instalación](#instalación)
-- [Uso](#uso)
-- [Estructura de Archivos](#estructura-de-archivos)
-- [Contribuir](#contribuir)
-- [Créditos](#créditos)
-- [Licencia](#licencia)
+### Requisitos
+- Python 3.x
+- Biblioteca `tabulate`: `pip3 install tabulate`
 
----
+### Ejecución
+1. Asegura que los archivos (`inventario.txt`, `ventas.txt`, `vendedores.txt`) estén en el mismo directorio que `main.py`
+2. Ejecuta: `python3 main.py`
 
-## Requisitos
+## Documentación
 
-El sistema requiere Python 3.x y la instalación de la biblioteca `tabulate` para generar tablas en consola.
+Este repositorio incluye documentación detallada para diferentes audiencias:
 
-### Dependencias:
-- **Python 3.x**
-- **tabulate**: Para mostrar los datos en formato de tabla.
-
-Instala las dependencias ejecutando:
-
-```bash
-pip3 install tabulate
-```
-
----
-
-## Instalación
-
-1. Clona este repositorio:
-
-   ```bash
-   git clone https://github.com/tuusuario/tu-repositorio.git
-   cd tu-repositorio
-   ```
-
-2. Asegúrate de tener **Python 3** instalado.
-
-3. Instala las dependencias necesarias:
-   ```bash
-   pip3 install tabulate
-   ```
-
-4. Coloca los archivos de datos (`inventario.txt`, `ventas.txt`, `vendedores.txt`) en el **mismo directorio** donde está el archivo `main.py`.
-
----
-
-## Uso
-
-### Ejecución del programa
-
-Para ejecutar el programa, simplemente corre el siguiente comando una vez los archivos esten dentro de la misma carpeta y tu terminal este localizado en dicha carpeta:
-
-```bash
-python3 main.py
-```
-
-### Menú Principal
-
-Al ejecutar el programa, verás el siguiente menú:
-
-```plaintext
-=== SISTEMA DE INVENTARIO Y VENTAS ===
-1) Registrar venta
-2) Agregar producto al inventario
-3) Mostrar inventario
-4) Consultar datos de ventas
-5) Mostrar reportes de ventas por vendedor o por artículo
-6) Registrar vendedor
-7) Mostrar vendedores
-8) Mostrar modelo más vendido
-9) Mostrar vendedor estrella
-10) Salir
-```
-
-Cada opción del menú te guiará en la acción correspondiente.
-
-### Ejemplo de uso
-
-- **Registrar una venta**: Selecciona la opción 1, ingresa el modelo, nombre del producto, cantidad vendida y el ID del vendedor.
-- **Consultar inventario**: Selecciona la opción 3 para ver el inventario actual.
-
----
+- [**Manual de Usuario**](./Manual.md): Guía completa con instrucciones paso a paso y ejemplos de uso para usuarios finales
+- [**Explicación del Código**](./Explicacioncodigo.md): Documentación técnica que explica la implementación para desarrolladores
 
 ## Estructura de Archivos
-
-Dado que los archivos de datos deben estar en el mismo directorio que el código fuente, tu proyecto se verá así:
-
-```plaintext
-├── main.py                      # Archivo principal con el código del sistema
-├── inventario.txt                # Archivo de inventario
-├── vendedores.txt                # Archivo de vendedores
-├── ventas.txt                    # Archivo de ventas
-└── README.md                     # Este archivo
+```
+├── main.py              # Archivo principal del sistema
+├── inventario.txt       # Datos de inventario
+├── vendedores.txt       # Registro de vendedores
+├── ventas.txt           # Historial de ventas
+├── README.md            # Este archivo
+├── Manual.md            # Manual de usuario detallado
+└── Explicacioncodigo.md # Explicación técnica del código
 ```
 
----
-
 ## Créditos
-
-Este proyecto fue desarrollado por el Equipo 5:
+Desarrollado por el Equipo 5:
 - Pompeyo Alexander Pérez Marín
 - Athenea Méndez Cisneros
 - Andrea Estefanía De la Peña Contreras
@@ -125,5 +49,3 @@ Este proyecto fue desarrollado por el Equipo 5:
 - Erika Esquivel Correa
 
 Agradecimientos especiales a la profesora **Mayra Flores López** por su orientación en el curso de Pensamiento Computacional para la Ingeniería.
-
----
